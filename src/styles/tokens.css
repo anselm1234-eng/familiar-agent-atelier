@@ -1,0 +1,54 @@
+﻿:root {
+  /* Light Mode (Soft Airy Glass) */
+  --bg-body: #F8F9FA;
+  --bg-surface: rgba(255, 255, 255, 0.7);
+  --bg-hover: rgba(255, 255, 255, 0.9);
+  
+  --text-primary: #1A1A1A;
+  --text-secondary: #555555;
+  --text-tertiary: #888888;
+  --text-on-accent: #1A1A1A;
+  
+  /* Accents (Light) */
+  --accent-peach: #FFD6C2;
+  --accent-sage: #D4E8C9;
+  --accent-lavender: #E2D9FF;
+  --accent-clay: #FFC2C2;
+  
+  --border-subtle: rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.03);
+  --shadow-md: 0 12px 32px rgba(0,0,0,0.06);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.1);
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Instrument Serif', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body.dark {
+  /* Dark Mode (Deep Space & Cyberpunk) */
+  --bg-body: #050505;
+  --bg-surface: rgba(20, 20, 25, 0.6);
+  --bg-hover: rgba(40, 40, 50, 0.8);
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0B0;
+  --text-tertiary: #666677;
+  --text-on-accent: #FFFFFF;
+  
+  /* Accents (Neon / Glowing) */
+  --accent-peach: rgba(255, 118, 117, 0.2);
+  --accent-sage: rgba(0, 206, 201, 0.2);
+  --accent-lavender: rgba(162, 155, 254, 0.2);
+  --accent-clay: rgba(255, 107, 129, 0.2);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.5);
+  --shadow-md: 0 12px 32px rgba(0,0,0,0.7);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.9);
+}

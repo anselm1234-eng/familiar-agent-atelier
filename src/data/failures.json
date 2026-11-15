@@ -1,0 +1,7 @@
+﻿[
+  { "id": "loop", "symptom": "Agent sends the same email twice.", "cause": "Missing state check between runs.", "guardrail": "Add a 'HasProcessed' memory flag." },
+  { "id": "over-permission", "symptom": "Agent deletes a calendar event it shouldn't have.", "cause": "Requested write access when only read was needed.", "guardrail": "Apply least-privilege scopes." },
+  { "id": "hallucination", "symptom": "Agent emails a client with entirely made-up facts.", "cause": "No retrieval grounding or human-in-the-loop.", "guardrail": "Add a 'Human Check' node before sending." },
+  { "id": "scope-creep", "symptom": "Agent starts organizing your files instead of just reading them.", "cause": "Ambiguous system prompt.", "guardrail": "Add strict negative constraints to Persona." },
+  { "id": "silent-failure", "symptom": "Agent stops running for 3 days and no one notices.", "cause": "No error handling or health checks.", "guardrail": "Add a 'Fallback' node that notifies you on failure." }
+]

@@ -1,0 +1,36 @@
+﻿@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    height: auto;
+    overflow: visible;
+  }
+  
+  .sidebar, .bottom-tabs, .canvas-toolbar, .sheet, .sheet-backdrop, .palette-overlay {
+    display: none !important;
+  }
+
+  .app-shell {
+    display: block;
+  }
+
+  .main-content {
+    overflow: visible;
+    padding: 0;
+  }
+
+  .canvas-container {
+    background: white !important;
+    height: 100vh;
+  }
+
+  .canvas-node {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+  }
+
+  .svg-layer path {
+    stroke: #333 !important;
+  }
+}

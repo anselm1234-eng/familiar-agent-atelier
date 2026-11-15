@@ -1,0 +1,30 @@
+﻿[
+  { 
+    "id": "inbox-zero", 
+    "name": "Inbox Zero", 
+    "desc": "Triage emails, draft replies, and archive junk.",
+    "difficulty": "Medium",
+    "nodes": ["Morning Cron", "Fetch Emails", "Classify", "Draft Reply", "Human Check"]
+  },
+  {
+    "id": "morning-brief",
+    "name": "Morning Brief",
+    "desc": "Wake up to a summary of your day, weather, and top priorities.",
+    "difficulty": "Easy",
+    "nodes": ["8AM Trigger", "Fetch Calendar", "Fetch Weather", "Summarize", "Send to Telegram"]
+  },
+  {
+    "id": "bill-sentinel",
+    "name": "Bill Sentinel",
+    "desc": "Watch for invoice emails and log them to a spreadsheet.",
+    "difficulty": "Hard",
+    "nodes": ["Email Trigger", "Extract PDF", "Parse Amount", "Log to Sheets", "Alert if > $500"]
+  },
+  {
+    "id": "meeting-shield",
+    "name": "Meeting Shield",
+    "desc": "Block focus time on your calendar when you have too many meetings.",
+    "difficulty": "Medium",
+    "nodes": ["Daily Check", "Count Meetings", "If > 4, block 2 hours", "Notify Me"]
+  }
+]

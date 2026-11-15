@@ -1,0 +1,10 @@
+﻿[
+  { "id": "gmail-read", "name": "Gmail (Read)", "category": "Email", "risk": "low", "requiresAuth": true, "scopes": ["gmail.readonly"], "desc": "Read incoming emails and threads.", "freeAlt": "Local Maildir" },
+  { "id": "gmail-send", "name": "Gmail (Send)", "category": "Email", "risk": "high", "requiresAuth": true, "scopes": ["gmail.send"], "desc": "Send emails on your behalf.", "freeAlt": "None" },
+  { "id": "cal-read", "name": "Google Calendar (Read)", "category": "Calendar", "risk": "low", "requiresAuth": true, "scopes": ["calendar.readonly"], "desc": "View upcoming events and availability.", "freeAlt": "CalDAV" },
+  { "id": "cal-write", "name": "Google Calendar (Write)", "category": "Calendar", "risk": "medium", "requiresAuth": true, "scopes": ["calendar.events"], "desc": "Create, move, or delete events.", "freeAlt": "CalDAV" },
+  { "id": "notion-read", "name": "Notion (Read)", "category": "Knowledge", "risk": "low", "requiresAuth": true, "scopes": ["read_content"], "desc": "Read pages and databases.", "freeAlt": "Local Markdown" },
+  { "id": "notion-write", "name": "Notion (Write)", "category": "Knowledge", "risk": "medium", "requiresAuth": true, "scopes": ["insert_content"], "desc": "Update pages and add blocks.", "freeAlt": "Local Markdown" },
+  { "id": "home-assist", "name": "Home Assistant", "category": "Smart Home", "risk": "medium", "requiresAuth": true, "scopes": ["api"], "desc": "Control lights, thermostat, and devices.", "freeAlt": "None" },
+  { "id": "stripe-billing", "name": "Stripe", "category": "Finance", "risk": "high", "requiresAuth": true, "scopes": ["read_only", "charges"], "desc": "View revenue and issue refunds.", "freeAlt": "None" }
+]

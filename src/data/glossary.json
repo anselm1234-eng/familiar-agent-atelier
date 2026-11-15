@@ -1,0 +1,9 @@
+﻿[
+  { "term": "Genome", "definition": "The 8 traits (Tone, Autonomy, Risk, etc.) that define your agent's personality and behavior." },
+  { "term": "Blueprint", "definition": "The visual node graph (Canvas) that defines how your agent thinks and acts." },
+  { "term": "Guardrail", "definition": "A safety constraint, such as a Human Check or Budget Cap, that prevents the agent from causing harm." },
+  { "term": "Trigger", "definition": "The event that wakes your agent up (e.g., a Cron schedule, a new email, or a manual command)." },
+  { "term": "MCP", "definition": "Model Context Protocol. An open standard for connecting AI assistants to local tools and data." },
+  { "term": "Fallback", "definition": "What the agent should do if a tool fails or times out." },
+  { "term": "Ritual", "definition": "A daily habit you perform to train, audit, or improve your agent." }
+]

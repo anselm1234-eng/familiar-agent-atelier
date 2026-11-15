@@ -1,0 +1,47 @@
+﻿/* Glass Bento Cards */
+.bento-card {
+  background: var(--bg-surface);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  display: flex; flex-direction: column; justify-content: space-between;
+  overflow: hidden; position: relative;
+  animation: slide-up 0.6s ease-out backwards;
+}
+.bento-card:hover { 
+  transform: translateY(-4px) scale(1.02); 
+  box-shadow: var(--shadow-md); 
+  border-color: var(--text-tertiary);
+}
+body.dark .bento-card:hover {
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 0 30px rgba(255,255,255,0.05), var(--shadow-md);
+}
+
+/* Sliders */
+.genome-slider-group { margin-bottom: 20px; background: var(--bg-surface); backdrop-filter: blur(16px); padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); animation: slide-up 0.4s ease-out backwards; }
+.slider-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.slider-title { font-family: var(--font-serif); font-size: 20px; }
+
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; background: transparent; }
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; height: 24px; width: 24px; border-radius: 50%;
+  background: var(--bg-surface); border: 2px solid var(--text-primary);
+  cursor: pointer; margin-top: -10px; box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+body.dark input[type=range]::-webkit-slider-thumb { border-color: #fff; box-shadow: 0 0 10px rgba(255,255,255,0.5); }
+input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; background: var(--border-subtle); border-radius: 2px; }
+
+/* Switch */
+.switch { position: relative; display: inline-block; width: 48px; height: 28px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--bg-hover); transition: .4s; border-radius: 34px; border: 1px solid var(--border-subtle); }
+.slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 4px; bottom: 3px; background-color: var(--text-secondary); transition: .4s; border-radius: 50%; box-shadow: var(--shadow-sm); }
+input:checked + .slider { background-color: var(--text-primary); }
+input:checked + .slider:before { transform: translateX(20px); background-color: var(--bg-body); }

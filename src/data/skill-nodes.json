@@ -1,0 +1,12 @@
+﻿[
+  { "id": "email-read", "label": "Read Email", "category": "Inbox", "requires": [], "difficulty": 1, "desc": "Connect to Gmail/Outlook and parse incoming messages." },
+  { "id": "email-triage", "label": "Triage Inbox", "category": "Inbox", "requires": ["email-read"], "difficulty": 2, "desc": "Categorize emails into Urgent, Important, and Junk." },
+  { "id": "email-draft", "label": "Draft Replies", "category": "Inbox", "requires": ["email-triage"], "difficulty": 3, "desc": "Generate context-aware draft responses." },
+  { "id": "email-send", "label": "Send Autonomously", "category": "Inbox", "requires": ["email-draft"], "difficulty": 5, "desc": "Send emails without human review. (Requires strong guardrails)." },
+  
+  { "id": "cal-read", "label": "Read Calendar", "category": "Calendar", "requires": [], "difficulty": 1, "desc": "Know what events are coming up." },
+  { "id": "cal-schedule", "label": "Schedule Events", "category": "Calendar", "requires": ["cal-read"], "difficulty": 3, "desc": "Book meetings and block focus time." },
+  
+  { "id": "web-search", "label": "Search Web", "category": "Knowledge", "requires": [], "difficulty": 1, "desc": "Search the internet for current information." },
+  { "id": "web-summarize", "label": "Summarize Web", "category": "Knowledge", "requires": ["web-search"], "difficulty": 2, "desc": "Extract key facts from long articles." }
+]
