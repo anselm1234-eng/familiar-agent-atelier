@@ -35,4 +35,4 @@ Every other agent tool starts with code. **Familiar** starts with a creature. It
    npm run build
 
 ## 📄 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License. Enjoy it.
