@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: '/familiar-agent-atelier/',
+  // This tells Vite to prefix all asset paths with your GitHub repo name
+  base: '/familiar-agent-atelier/', 
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
@@ -15,9 +16,22 @@ export default defineConfig({
         background_color: '#F7F4EF',
         display: 'standalone',
         icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+          { 
+            src: 'icons/icon-192.png', 
+            sizes: '192x192', 
+            type: 'image/png' 
+          },
+          { 
+            src: 'icons/icon-512.png', 
+            sizes: '512x512', 
+            type: 'image/png' 
+          },
+          { 
+            src: 'icons/maskable-512.png', 
+            sizes: '512x512', 
+            type: 'image/png', 
+            purpose: 'any maskable' 
+          }
         ]
       }
     })
